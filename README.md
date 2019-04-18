@@ -1,4 +1,4 @@
-# cf_metafeatures
+# Metafeatures for Collaborative Filtering Algorithm Selection
 
 Source code for Classification approaches for Collaborative Filtering algorithm selection. It contains all experimental procedures used to empirically compare multiple Collaborative Filtering algorithm selection meta-appraches. The code can be used to replicate the experiments of the contributions presented in the following research papers:
 
