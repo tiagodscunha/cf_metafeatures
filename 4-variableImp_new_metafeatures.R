@@ -93,7 +93,7 @@ d1$metafeature[which(d1$metafeature == "colMeans_mode")] <- "I.mean.mode"
 
 g1 <- ggplot(d1,aes(x=metafeature,y=value)) + geom_bar(stat = "identity",  position = "identity", width=0.5) + 
   theme(axis.title.x = element_blank(),axis.title.y = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5)) +
-  ggtitle("RM")
+  ggtitle("RM")+ coord_flip()
 g1
 
 d2 <- melt(all_results[[2]])
@@ -119,7 +119,7 @@ d$metafeature[which(d$metafeature == "BPRMF.MAP")] <- "BPRMF.NDCG"
 
 g2 <- ggplot(d,aes(x=metafeature,y=value)) + geom_bar(stat = "identity",  position = "identity", width=0.5) + 
   theme(axis.title.x = element_blank(),axis.title.y = element_blank(),axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5))  +
-  ggtitle("SL")
+  ggtitle("SL")+ coord_flip()
 g2
 
 
@@ -137,7 +137,7 @@ d3$metafeature[which(d3$metafeature == "communities_alpha_skewness_entropy")] <-
 
 g3 <- ggplot(d3,aes(x=metafeature,y=value)) + geom_bar(stat = "identity",  position = "identity", width=0.5) + 
   theme(axis.title.x = element_blank(),axis.title.y = element_blank(),axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5))  + 
-  ggtitle("GR")
+  ggtitle("GR")+ coord_flip()
 g3
 
 d4 <- melt(all_results[[5]])
@@ -159,7 +159,7 @@ d$metafeature[which(d$metafeature == "colMeans_mode")] <- "I.mean.mode"
 
 g4 <- ggplot(d,aes(x=metafeature,y=value)) + geom_bar(stat = "identity",  position = "identity", width=0.5) + 
   theme(axis.title.x = element_blank(),axis.title.y = element_blank(),axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5))  +
-  ggtitle("CM")
+  ggtitle("CM")+ coord_flip()
 
 g4
 
